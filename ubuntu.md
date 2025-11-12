@@ -147,13 +147,12 @@ wget -O ~/.config/alacritty/alacritty.toml https://raw.githubusercontent.com/muk
 ## Go
 ```shell
 cd ~/Downloads
-wget https://go.dev/dl/go1.20.14.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xvf go_latest.tar.gz
+wget -O go_latest.tar.gz https://go.dev/dl/go1.25.4.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go_latest.tar.gz
 rm go_latest.tar.gz
 
-export GOROOT=/usr/local/go >> ~/.zshrc
-export GOPATH=$HOME/go >> ~/.zshrc
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH >> ~/.zshrc
+echo PATH=$PATH:/usr/local/go/bin >> ~/.zshrc
+
 source ~/.zshrc
 
 go version
