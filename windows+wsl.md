@@ -65,7 +65,7 @@ plugins=(
     docker
     docker-compose
     history
-    eza-zsh
+    zsh-eza
     colorize
     command-not-found
     copyfile
