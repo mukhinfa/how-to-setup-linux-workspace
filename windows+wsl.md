@@ -100,9 +100,29 @@ wget -O go_latest.tar.gz https://go.dev/dl/go1.25.4.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go_latest.tar.gz
 rm go_latest.tar.gz
 
-export PATH=$PATH:/usr/local/go/bin >> ~/.zshrc
+echo PATH=$PATH:/usr/local/go/bin >> ~/.zshrc
 
 source ~/.zshrc
 
 go version
 ```
+
+### Git
+set global name & email
+```shell
+git config --global user.name "name"
+git config --global user.email "your@email.com"
+```
+set VSCode as default git editor
+```shell
+git config --global core.editor "code --wait"
+```
+Color output configuration
+```shell
+git config --global color.ui auto
+```
+git push strategy
+```shell
+git config --global push.default simple
+```
+
