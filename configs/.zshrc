@@ -71,7 +71,7 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    zsh-eza
+    eza
     git
     z
     zsh-autosuggestions
@@ -122,7 +122,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /home/fmukhin/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/fmukhin/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ls='eza --tree --level=1 --icons=always --no-time --color=always --no-user --no-permissions' 
 
@@ -137,4 +136,3 @@ alias lt='eza --tree --level=2 --color=always --group-directories-first --icons'
 alias l.="eza -a | grep -E '^\.'"
 
 export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$HOME/go/bin
