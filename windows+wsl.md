@@ -65,7 +65,7 @@ plugins=(
     docker
     docker-compose
     history
-    zsh-eza
+    eza
     colorize
     command-not-found
     copyfile
@@ -82,6 +82,15 @@ add alias (optional)
 ```shell
 
 alias ls='eza --tree --level=1 --icons=always --no-time --color=always --no-user --no-permissions'
+
+alias ll='eza -la --icons --octal-permissions --group-directories-first'
+alias l='eza -bGF --header --git --color=always --group-directories-first --icons'
+alias llm='eza -lbGd --header --git --sort=modified --color=always --group-directories-first --icons' 
+alias la='eza --long --all --group --group-directories-first'
+alias lx='eza -lbhHigUmuSa@ --time-style=long-iso --git --color-scale --color=always --group-directories-first --icons'
+
+alias lt='eza --tree --level=2 --color=always --group-directories-first --icons'
+alias l.="eza -a | grep -E '^\.'"
 ```
 
 Upd config
