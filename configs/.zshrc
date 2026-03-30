@@ -138,6 +138,3 @@ alias l.="eza -a | grep -E '^\.'"
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
-
-alias zoom='flatpak run us.zoom.Zoom'
-alias goland='flatpak run com.jetbrains.GoLand'
